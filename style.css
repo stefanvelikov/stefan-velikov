@@ -4400,6 +4400,19 @@ figcaption {
   color: #1f1f2d;
 }
 
+.lp-about_head-img {
+  position: absolute;
+  left: 44%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 10rem;
+  border-radius: 500px;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4rem;
@@ -4733,6 +4746,10 @@ figcaption {
   .menu-button.w--open {
     background-color: transparent;
   }
+
+  .lp-about_head-img {
+    max-width: 13.5vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5038,6 +5055,10 @@ figcaption {
 
   .lp_cta-text {
     font-size: 1.6rem;
+  }
+
+  .lp-about_head-img {
+    max-width: 14.5vw;
   }
 }
 
@@ -5355,6 +5376,11 @@ figcaption {
     max-width: none;
     padding-left: 0rem;
     font-size: 1.5rem;
+  }
+
+  .lp-about_head-img {
+    left: 36%;
+    max-width: 33vw;
   }
 }
 
