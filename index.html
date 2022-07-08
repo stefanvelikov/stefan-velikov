@@ -244,17 +244,27 @@
                       <div class="lp-about_background-lines is-second"></div>
                       <div class="lp-about_background-lines is-first"></div>
                       <img
-                        src="https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b9f74fe2c679dff8acf0cd_Photo%20in%20the%20mountains%20with%20a%20snowboard%20in%20my%20hands.jpg"
+                        src="https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c864635171cb2a135185ce_Working%20on%20a%20project.jpg"
                         loading="lazy"
                         srcset="
-                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b9f74fe2c679dff8acf0cd_Photo%20in%20the%20mountains%20with%20a%20snowboard%20in%20my%20hands-p-500.jpeg  500w,
-                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b9f74fe2c679dff8acf0cd_Photo%20in%20the%20mountains%20with%20a%20snowboard%20in%20my%20hands-p-800.jpeg  800w,
-                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b9f74fe2c679dff8acf0cd_Photo%20in%20the%20mountains%20with%20a%20snowboard%20in%20my%20hands.jpg        1000w
+                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c864635171cb2a135185ce_Working%20on%20a%20project-p-500.jpeg 500w,
+                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c864635171cb2a135185ce_Working%20on%20a%20project.jpg        800w
                         "
                         sizes="(max-width: 479px) 78vw, (max-width: 767px) 33vw, 32vw"
-                        alt="Photo in the mountains with a snowboard in my hands"
-                        class="lp-about_image"
+                        alt=""
+                        class="lp-about_image is-main"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c86618d16d036aeba344ff_Han%20Solo.jpg"
+                        loading="lazy"
+                        srcset="
+                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c86618d16d036aeba344ff_Han%20Solo-p-500.jpeg 500w,
+                          https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c86618d16d036aeba344ff_Han%20Solo.jpg        828w
+                        "
+                        sizes="(max-width: 479px) 78vw, (max-width: 767px) 33vw, 32vw"
+                        alt=""
+                        class="lp-about_image is-hover-img clickable-off"
                       />
+                      <div class="lp-about_badge"><p class="text-align-center">Me working on a project</p></div>
                     </div>
                   </div>
                   <div class="lp-about_column is-first">
@@ -263,7 +273,7 @@
                     <div class="lp-about_text-contain">
                       <p>The combination of my love about code and interaction puts me in a unique place in the world of web design.</p>
                       <div class="margin-top margin-medium">
-                        <div class="lp-hero_button-wrap"><a href="#work" class="button w-button">View CV</a></div>
+                        <div class="lp-hero_button-wrap"><a href="#work" class="button w-button">View work</a></div>
                       </div>
                     </div>
                   </div>
@@ -572,6 +582,15 @@
           },
           500
         );
+      });
+
+      $(".lp-about_image.is-main").on("mouseenter", function () {
+        $(".lp-about_image.is-hover-img").css("opacity", 1);
+        $(".lp-about_badge p").text('"Me" in my free time :)');
+      });
+      $(".lp-about_image.is-main").on("mouseleave", function () {
+        $(".lp-about_image.is-hover-img").css("opacity", 0);
+        $(".lp-about_badge p").text("Me working on a project");
       });
 
       $(".lp-work_item").on("mouseenter", function () {

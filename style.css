@@ -4127,6 +4127,16 @@ figcaption {
   box-shadow: 7px 7px 30px 0 rgba(56, 110, 236, 0.2);
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 40% 50%;
+  object-position: 40% 50%;
+}
+
+.lp-about_image.is-hover-img {
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
 }
 
 .lp-about_text-contain {
@@ -4375,6 +4385,19 @@ figcaption {
   bottom: auto;
   color: #fdfdfd;
   font-weight: 300;
+}
+
+.lp-about_badge {
+  position: absolute;
+  left: auto;
+  top: -1rem;
+  right: -1rem;
+  bottom: auto;
+  width: auto;
+  padding: 0.5rem 2rem;
+  border-radius: 500px;
+  background-color: #fdfdfd;
+  color: #1f1f2d;
 }
 
 @media screen and (max-width: 991px) {
@@ -4682,6 +4705,14 @@ figcaption {
 
   .paragraph {
     left: 0rem;
+  }
+
+  .lp-about_badge {
+    right: 50%;
+    min-width: 15rem;
+    -webkit-transform: translate(50%, 0px);
+    -ms-transform: translate(50%, 0px);
+    transform: translate(50%, 0px);
   }
 }
 
