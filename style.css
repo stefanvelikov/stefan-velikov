@@ -4622,6 +4622,17 @@ figcaption {
     object-position: 50% 0%;
   }
 
+  .nav_link {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75px;
+  }
+
+  .nav_links {
+    background-color: rgba(19, 20, 37, 0.6);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+
   .lp-hero_badge-wrap {
     right: 50%;
     display: none;
@@ -4713,6 +4724,14 @@ figcaption {
     -webkit-transform: translate(50%, 0px);
     -ms-transform: translate(50%, 0px);
     transform: translate(50%, 0px);
+  }
+
+  .menu-button {
+    background-color: transparent;
+  }
+
+  .menu-button.w--open {
+    background-color: transparent;
   }
 }
 
