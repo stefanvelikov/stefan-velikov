@@ -1,0 +1,4 @@
+- name: Webflow Get
+  # You may pin to the exact commit or the version.
+  # uses: loomchild/webflow-get@c738998b265daeb58d84f295e9e5d51106b258ea
+  uses: loomchild/webflow-get@v1.2
