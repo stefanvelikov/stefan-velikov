@@ -2562,6 +2562,8 @@ figcaption {
 }
 
 .container-large {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 80rem;
   margin-right: auto;
@@ -3967,6 +3969,12 @@ figcaption {
   object-fit: scale-down;
 }
 
+.lp-summery_logo.arrow {
+  height: 1.8rem;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .footer_component {
   position: -webkit-sticky;
   position: sticky;
@@ -5261,10 +5269,10 @@ figcaption {
     grid-auto-columns: 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
   }
 
   .lp-summery_logo {
@@ -5278,7 +5286,10 @@ figcaption {
 
   .lp-summery_logo.sketch {
     position: relative;
-    right: -10vw;
+  }
+
+  .lp-summery_logo.arrow {
+    height: 1.3rem;
   }
 
   .footer_content {
@@ -5495,11 +5506,6 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_2733aeb5-c980-c6d4-ccd9-baf5e064c083-a120a423 {
-    -ms-grid-column-align: end;
-    justify-self: end;
-  }
-
   #w-node-_1c0511d1-1734-975d-728c-1f00ce9be196-a120a423 {
     -ms-grid-column-align: start;
     justify-self: start;
@@ -5512,11 +5518,51 @@ figcaption {
     -webkit-order: 9999;
     -ms-flex-order: 9999;
     order: 9999;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 4;
+    -ms-grid-row: 3;
+    grid-row-start: 3;
   }
 
   #w-node-f19fe93e-5fb6-887a-792d-1ac4dccc44e8-a120a423 {
     -ms-grid-column-align: center;
     justify-self: center;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 3;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+  }
+
+  #w-node-_84f63646-ad29-14cf-d27f-d47e235b1732-a120a423 {
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-row-span: 1;
+    grid-row-end: 3;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+  }
+
+  #w-node-_2733aeb5-c980-c6d4-ccd9-baf5e064c083-a120a423 {
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-column-span: 1;
+    grid-column-end: 4;
+    -ms-grid-column: 3;
+    grid-column-start: 3;
+    -ms-grid-row-span: 1;
+    grid-row-end: 3;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
   }
 }
 @font-face {
