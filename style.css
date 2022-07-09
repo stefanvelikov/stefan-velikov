@@ -5304,10 +5304,10 @@ figcaption {
   }
 
   .footer_email {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -5380,7 +5380,7 @@ figcaption {
 
   .lp-about_head-img {
     left: 36%;
-    max-width: 33vw;
+    max-width: 33.9vw;
   }
 }
 
