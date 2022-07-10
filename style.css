@@ -4200,6 +4200,7 @@ figcaption {
 
 .lp-work_popup {
   position: absolute;
+  z-index: 3;
   overflow: visible;
   width: 27.5rem;
   height: 13rem;
