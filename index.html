@@ -182,7 +182,7 @@
                           https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b8958470c1726c89f86b5f_Stefan%20Velikov-p-800.jpeg  800w,
                           https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b8958470c1726c89f86b5f_Stefan%20Velikov.jpg        1000w
                         "
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 30vw"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 93vw"
                         alt=""
                         class="lp-hero_image"
                       />
@@ -232,7 +232,7 @@
                         https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c9ab99bf7adcc6ec1a61bf_arrow-p-1600.png 1600w,
                         https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c9ab99bf7adcc6ec1a61bf_arrow.png        1866w
                       "
-                      sizes="(max-width: 479px) 21vw, (max-width: 767px) 13vw, (max-width: 991px) 9vw, 7vw"
+                      sizes="100vw"
                       alt=""
                       class="lp-summery_logo arrow"
                     /><img
@@ -322,7 +322,7 @@
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088eaab634e179e98a089_Ennovaty-p-800.jpeg  800w,
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088eaab634e179e98a089_Ennovaty.jpg        1000w
                           "
-                          sizes="(max-width: 479px) 66vw, (max-width: 991px) 80vw, 100vw"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 93vw, 100vw"
                           alt=""
                           class="lp-work_item-image"
                         />
@@ -341,7 +341,7 @@
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea54de25d4303e40b6_Teritoria%20LP-p-800.jpeg  800w,
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea54de25d4303e40b6_Teritoria%20LP.jpg        1000w
                           "
-                          sizes="(max-width: 479px) 66vw, (max-width: 991px) 80vw, 100vw"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 93vw, 100vw"
                           alt=""
                           class="lp-work_item-image"
                         />
@@ -359,7 +359,7 @@
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea5931984cd86fcd9d_NFT%20Marketplace-p-800.jpeg  800w,
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea5931984cd86fcd9d_NFT%20Marketplace.jpg        1000w
                           "
-                          sizes="(max-width: 479px) 66vw, (max-width: 991px) 80vw, 100vw"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 93vw, 100vw"
                           alt=""
                           class="lp-work_item-image"
                         />
@@ -377,7 +377,7 @@
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea8758bbb49985689a_VR%20-%20Partnes-p-800.jpeg  800w,
                             https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c088ea8758bbb49985689a_VR%20-%20Partnes.jpg        1000w
                           "
-                          sizes="(max-width: 479px) 66vw, (max-width: 991px) 80vw, 100vw"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 93vw, 100vw"
                           alt=""
                           class="lp-work_item-image"
                         />
@@ -612,7 +612,20 @@
         $(".lp-about_head-img").css("opacity", 1);
         $(".lp-about_badge p").text('"Me" in my free time :)');
       });
+
       $(".lp-about_image.is-main").on("mouseleave", function () {
+        $(".lp-about_image.is-hover-img").css("opacity", 0);
+        $(".lp-about_head-img").css("opacity", 0);
+        $(".lp-about_badge p").text("Me working on a project");
+      });
+
+      $(".lp-about_badge").on("mouseenter", function () {
+        $(".lp-about_image.is-hover-img").css("opacity", 1);
+        $(".lp-about_head-img").css("opacity", 1);
+        $(".lp-about_badge p").text('"Me" in my free time :)');
+      });
+
+      $(".lp-about_badge").on("mouseleave", function () {
         $(".lp-about_image.is-hover-img").css("opacity", 0);
         $(".lp-about_head-img").css("opacity", 0);
         $(".lp-about_badge p").text("Me working on a project");

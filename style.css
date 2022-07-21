@@ -311,7 +311,7 @@ html[data-w-dynpage] [data-w-cloak] {
   border-radius: 0;
   background: none;
   background-image: none;
-  background-position: 0 0;
+  background-position: 0% 0%;
   background-size: auto auto;
   background-repeat: repeat;
   background-origin: padding-box;
@@ -437,7 +437,7 @@ figcaption {
 }
 ul,
 ol {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 40px;
 }
@@ -570,7 +570,7 @@ textarea.w-select {
   display: inline-block;
   cursor: pointer;
   font-weight: normal;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 .w-radio {
   display: block;
@@ -1643,7 +1643,7 @@ textarea.w-select {
   opacity: 0.6;
 }
 .w-richtext figure div {
-  font-size: 0;
+  font-size: 0px;
   color: transparent;
 }
 .w-richtext figure.w-richtext-figure-type-image,
