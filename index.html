@@ -247,7 +247,7 @@
                         https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c9ab99bf7adcc6ec1a61bf_arrow-p-1600.png 1600w,
                         https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62c9ab99bf7adcc6ec1a61bf_arrow.png        1866w
                       "
-                      sizes="100vw"
+                      sizes="(max-width: 479px) 21vw, (max-width: 767px) 13vw, (max-width: 991px) 9vw, 7vw"
                       alt=""
                       class="lp-summery_logo arrow"
                     /><img
@@ -582,7 +582,7 @@
         const lp_hero_image_tl = gsap.timeline();
 
         lp_hero_heading_tl
-          .from(".nav_component", 1.6, { top: -300, delay: 0.25, ease: "power4.out" })
+          .from(".lp-nav_component", 1.6, { top: -300, delay: 0.25, ease: "power4.out" })
           .from(
             ".heading-line span",
             1.8,
@@ -716,6 +716,8 @@
       }
 
       $(window).on("mousemove", movePopup);
+      $(window).on("mousewheel", movePopup);
+      $(window).on("scroll", movePopup);
     </script>
   </body>
 </html>
