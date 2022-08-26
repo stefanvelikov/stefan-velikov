@@ -4510,6 +4510,16 @@ figcaption {
   width: 100rem;
 }
 
+.professional-partner {
+  position: fixed;
+  left: auto;
+  top: auto;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 999;
+  max-width: 14rem;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4rem;
