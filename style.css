@@ -2303,6 +2303,17 @@ figcaption {
   text-align: center;
 }
 
+.button.is-secondary {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.button.is-hero-book {
+  margin-right: 0.5rem;
+}
+
 .heading-medium {
   font-family: Mont, sans-serif;
   font-size: 2rem;
@@ -5188,6 +5199,15 @@ figcaption {
     font-size: 9vw;
   }
 
+  .button {
+    width: 100%;
+  }
+
+  .button.is-hero-book {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+
   .show-mobile-portrait {
     display: block;
   }
@@ -5358,6 +5378,15 @@ figcaption {
 
   .heading-line {
     min-height: 12.6vw;
+  }
+
+  .lp-hero_button-wrap {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .lp-about_component {
@@ -5674,7 +5703,7 @@ figcaption {
 }
 @font-face {
   font-family: "Mont";
-  src: url("https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b84f1970c172f5d3f632c7_Montserrat-Bold.ttf")
+  src: url("https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f1970c172f5d3f632c7_Montserrat-Bold.ttf")
     format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -5682,7 +5711,7 @@ figcaption {
 }
 @font-face {
   font-family: "Lat";
-  src: url("https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b84f2d2f00914397fb1c2d_Lato-Light.ttf")
+  src: url("https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f2d2f00914397fb1c2d_Lato-Light.ttf")
     format("truetype");
   font-weight: 300;
   font-style: normal;
@@ -5690,7 +5719,7 @@ figcaption {
 }
 @font-face {
   font-family: "Lat";
-  src: url("https://uploads-ssl.webflow.com/628bbd14c0303f6a72c215f8/62b84f2d3b8308a913b30fb8_Lato-Regular.ttf")
+  src: url("https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f2d3b8308a913b30fb8_Lato-Regular.ttf")
     format("truetype");
   font-weight: 400;
   font-style: normal;
