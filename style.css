@@ -4531,6 +4531,11 @@ figcaption {
   max-width: 14rem;
 }
 
+.book-a-call {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4rem;
