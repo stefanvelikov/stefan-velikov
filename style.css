@@ -4316,6 +4316,18 @@ figcaption {
   transform: translate(0px, 200%);
 }
 
+.lp-work_popup-item.is-ema-design {
+  -webkit-transform: translate(0px, 300%);
+  -ms-transform: translate(0px, 300%);
+  transform: translate(0px, 300%);
+}
+
+.lp-work_popup-item.is-charity {
+  -webkit-transform: translate(0px, 300%);
+  -ms-transform: translate(0px, 300%);
+  transform: translate(0px, 300%);
+}
+
 .text-color-dark-blue {
   color: #1f1f2d;
 }
