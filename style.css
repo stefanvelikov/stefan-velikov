@@ -4743,6 +4743,7 @@ figcaption {
   }
 
   .lp-hero_content-right {
+    display: none;
     margin-top: 2.5rem;
   }
 
@@ -5175,7 +5176,8 @@ figcaption {
   }
 
   .section-lp-hero {
-    min-height: 70vh;
+    min-height: auto;
+    margin-bottom: 2rem;
   }
 
   .heading-line {
@@ -5365,6 +5367,17 @@ figcaption {
 
   .fs-cc-banner_text {
     margin-right: 0px;
+  }
+
+  .section-lp-hero {
+    margin-bottom: 0rem;
+  }
+
+  .lp-hero_content-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .lp-hero_image-wrap {
