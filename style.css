@@ -4849,6 +4849,10 @@ figcaption {
     object-position: 50% 50%;
   }
 
+  .lp-work_item-image.is-video {
+    height: 25rem;
+  }
+
   .div-block {
     position: static;
   }
@@ -5522,6 +5526,10 @@ figcaption {
   .lp-work_item {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lp-work_item-image.is-video {
+    height: 14rem;
   }
 
   .lp_cta-heading {
