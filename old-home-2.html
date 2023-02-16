@@ -39,19 +39,28 @@
 
     <!-- Please keep this css code to improve the font quality-->
     <style>
-
-        * {
+      * {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
 
-        .w-webflow-badge {
-         display: none !important;
-        }
+      .w-webflow-badge {
+        display: none !important;
+      }
 
-        <link rel="preload" href="https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f1970c172f5d3f632c7_Montserrat-Bold.ttf" as="font" type="font/tff" crossorigin="anonymous">
-        <link rel="preload" href="https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f2d3b8308a913b30fb8_Lato-Regular.ttf" as="font" type="font/tff" crossorigin="anonymous">
+      html.has-scroll-smooth {
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
     </style>
+
+    <link rel="preload" href="https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f1970c172f5d3f632c7_Montserrat-Bold.ttf" as="font" type="font/tff" crossorigin="anonymous" />
+    <link rel="preload" href="https://assets.website-files.com/628bbd14c0303f6a72c215f8/62b84f2d3b8308a913b30fb8_Lato-Regular.ttf" as="font" type="font/tff" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
   </head>
   <body>
     <div class="page-wrapper">
@@ -172,7 +181,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://assets.website-files.com/628bbd14c0303f6a72c215f8/js/stefan-velikov.aa375cf2a.js" type="text/javascript"></script>
+    <script src="https://assets.website-files.com/628bbd14c0303f6a72c215f8/js/stefan-velikov.72e6238e4.js" type="text/javascript"></script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><!
     [endif]--><!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTJKHHT" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
@@ -191,6 +200,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+
+    <script>
+      const locoScroll = new LocomotiveScroll({
+        el: document.querySelector("#smooth-wrapper"),
+        smooth: true,
+        smartphone: {
+          smooth: true,
+        },
+        tablet: {
+          smooth: true,
+        },
+        smoothMobile: 1,
+        multiplier: 1.0,
+      });
+
+      // Wait 2 seconds then calculate the new page height
+      setTimeout(() => {
+        locoScroll.update();
+      }, 2000);
+    </script>
 
     <script>
       $("a").each(function () {
