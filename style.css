@@ -2023,6 +2023,9 @@ figcaption {
 .text-weight-normal {
   font-weight: 400;
 }
+.text-weight-normal:hover {
+  text-decoration: underline;
+}
 .fs-styleguide_section {
   display: -ms-grid;
   display: grid;
@@ -3911,6 +3914,9 @@ figcaption {
 .book-a-call {
   font-weight: 400;
   text-transform: uppercase;
+}
+.book-a-call.lp-footer_link:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 991px) {
   h1 {
