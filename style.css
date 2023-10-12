@@ -3688,6 +3688,11 @@ figcaption {
   .lp-work_item-image.is-video {
     height: 25rem;
   }
+  .lp-work_item-image.is-video.is-web3 {
+    height: 0;
+    object-position: 50% 0%;
+    padding-top: 57%;
+  }
   .div-block {
     position: static;
   }
