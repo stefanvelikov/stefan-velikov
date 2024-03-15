@@ -3015,7 +3015,7 @@ figcaption {
   width: 99%;
   height: 70%;
   object-fit: cover;
-  object-position: 50% -20%;
+  object-position: 50% 0%;
   background-color: #19191b;
   border-radius: 180px 180px 0;
   position: relative;
@@ -3091,7 +3091,7 @@ figcaption {
   padding: 0.5rem 2rem;
   position: absolute;
   top: auto;
-  bottom: 12.5%;
+  bottom: 10%;
   left: auto;
   right: -5%;
 }
@@ -3286,6 +3286,7 @@ figcaption {
   display: flex;
 }
 .lp-work_item-column.is-right {
+  flex: none;
   justify-content: flex-end;
   align-items: center;
   display: flex;
@@ -3487,6 +3488,11 @@ figcaption {
 }
 .book-a-call.lp-footer_link:hover {
   text-decoration: underline;
+}
+.lp-work_component-sub-text {
+  color: #c3c3c3;
+  text-transform: none;
+  font-style: italic;
 }
 @media screen and (max-width: 991px) {
   h1 {
@@ -3698,6 +3704,9 @@ figcaption {
     height: 0;
     object-position: 50% 0%;
     padding-top: 57%;
+  }
+  .lp-work_item-image.is-video.is-bao {
+    height: 27rem;
   }
   .div-block {
     position: static;
@@ -3962,6 +3971,9 @@ figcaption {
     align-items: flex-start;
     margin-top: 4rem;
   }
+  .lp-work_item-image.is-video.is-bao {
+    height: 21rem;
+  }
   .lp_cta-text {
     font-size: 1.6rem;
   }
@@ -4182,6 +4194,9 @@ figcaption {
   }
   .lp-work_item-image.is-video {
     height: 14rem;
+  }
+  .lp-work_item-image.is-video.is-bao {
+    height: 51vw;
   }
   .lp_cta-heading {
     font-size: 12vw;
