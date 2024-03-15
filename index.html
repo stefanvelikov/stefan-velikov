@@ -737,8 +737,8 @@
         </div>
         <div class="lp-work_popup-item is-bao">
           <div
-            data-poster-url="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-poster-00001.jpg"
-            data-video-urls="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-transcode.mp4,https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-transcode.webm"
+            data-poster-url="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-poster-00001.jpg"
+            data-video-urls="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-transcode.mp4,https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-transcode.webm"
             data-autoplay="true"
             data-loop="true"
             data-wf-ignore="true"
@@ -748,14 +748,14 @@
               id="4057c6a3-512f-e4c9-0cb5-b83bd4ebf5d8-video"
               autoplay=""
               loop=""
-              style="background-image: url('https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-poster-00001.jpg')"
+              style="background-image: url('https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-poster-00001.jpg')"
               muted=""
               playsinline=""
               data-wf-ignore="true"
               data-object-fit="cover"
             >
-              <source src="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-transcode.mp4" data-wf-ignore="true" />
-              <source src="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/6527ad0d3dc9a436e115b120_PressLock-transcode.webm" data-wf-ignore="true" />
+              <source src="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-transcode.mp4" data-wf-ignore="true" />
+              <source src="https://assets-global.website-files.com/628bbd14c0303f6a72c215f8/65f430232ba41fbbe6d83ef7_bao-transcode.webm" data-wf-ignore="true" />
             </video>
           </div>
         </div>
@@ -922,101 +922,133 @@
         $(".lp-about_badge p").text("Me working on a project");
       });
 
+      //////////////
+
       $(".lp-work_item").on("mouseenter", function () {
-        $(this).find(".lp-work_item-column").addClass("active");
-        $(this).addClass("active");
-        $(this).siblings(".lp-work_item").removeClass("active");
-        $(this).siblings(".lp-work_item").find(".lp-work_item-column").removeClass("active");
+        var $this = $(this);
+        var index = $(".lp-work_item").index($this) + 1;
+
+        $this.addClass("active").siblings(".lp-work_item").removeClass("active");
+        $this.find(".lp-work_item-column").addClass("active");
+        $this.siblings(".lp-work_item").find(".lp-work_item-column").removeClass("active");
         $(".lp-work_popup").addClass("active");
 
-        var index = $(".lp-work_item").index(this) + 1;
-
-        //if (index > 1) {
-        //	$( ".lp-work_popup-item" ).each(function(  ) {
-        //  	var percent = index * 100;
-        //    percent = percent + "%"
-        //    $(this).css('top', percent)
-        //  });
-        //}
-
-        if (index == 1) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(100%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(200%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(300%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(400%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(500%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(600%)");
-        }
-
-        if (index == 2) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(100%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(200%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(300%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(400%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(500%)");
-        }
-
-        if (index == 3) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-200%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(100%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(200%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(300%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(400%)");
-        }
-
-        if (index == 4) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-300%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(-200%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(100%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(200%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(300%)");
-        }
-
-        if (index == 5) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-400%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(-300%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(-200%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(100%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(200%)");
-        }
-
-        if (index == 6) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-500%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(-400%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(-300%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(-200%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(0%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(100%)");
-        }
-
-        if (index == 7) {
-          $(".lp-work_popup-item").eq(0).css("transform", "translateY(-600%)");
-          $(".lp-work_popup-item").eq(1).css("transform", "translateY(-500%)");
-          $(".lp-work_popup-item").eq(2).css("transform", "translateY(-400%)");
-          $(".lp-work_popup-item").eq(3).css("transform", "translateY(-300%)");
-          $(".lp-work_popup-item").eq(4).css("transform", "translateY(-200%)");
-          $(".lp-work_popup-item").eq(5).css("transform", "translateY(-100%)");
-          $(".lp-work_popup-item").eq(6).css("transform", "translateY(0%)");
-        }
+        $(".lp-work_popup-item").each(function (i) {
+          var translateY = (i - index + 1) * 100 + "%"; // Adjusting index and calculation
+          $(this).css("transform", "translateY(" + translateY + ")");
+        });
       });
 
       $(".lp-work_item").on("mouseleave", function () {
         $(this).find(".lp-work_item-column").removeClass("active");
-        $(this).removeClass("active");
-        $(this).siblings(".lp-work_item").removeClass("active");
+        $(this).removeClass("active").siblings(".lp-work_item").removeClass("active");
         $(this).siblings(".lp-work_item").find(".lp-work_item-column").removeClass("active");
         $(".lp-work_popup").removeClass("active");
       });
+
+      //////////////
+
+      // $('.lp-work_item').on('mouseenter', function() {
+      //
+      //   $(this).find('.lp-work_item-column').addClass('active');
+      //   $(this).addClass('active');
+      //   $(this).siblings('.lp-work_item').removeClass('active');
+      //   $(this).siblings('.lp-work_item').find('.lp-work_item-column').removeClass('active');
+      //   $('.lp-work_popup').addClass('active');
+      //
+      //   var index = $('.lp-work_item').index(this) + 1;
+      //
+      //   //if (index > 1) {
+      //   //	$( ".lp-work_popup-item" ).each(function(  ) {
+      //   //  	var percent = index * 100;
+      //   //    percent = percent + "%"
+      //   //    $(this).css('top', percent)
+      //   //  });
+      //   //}
+      //
+      //   if (index == 1) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(100%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(200%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(300%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(400%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(500%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(600%)");
+      //   }
+      //
+      //   if (index == 2) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(100%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(200%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(300%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(400%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(500%)");
+      //
+      //   }
+      //
+      //   if (index == 3) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-200%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(100%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(200%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(300%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(400%)");
+      //   }
+      //
+      //   if (index == 4) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-300%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(-200%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(100%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(200%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(300%)");
+      //   }
+      //
+      //     if (index == 5) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-400%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(-300%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(-200%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(100%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(200%)");
+      //   }
+      //
+      //     if (index == 6) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-500%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(-400%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(-300%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(-200%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(0%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(100%)");
+      //   }
+      //
+      //    if (index == 7) {
+      //   	$( ".lp-work_popup-item" ).eq(0).css("transform", "translateY(-600%)");
+      //     $( ".lp-work_popup-item" ).eq(1).css("transform", "translateY(-500%)");
+      //     $( ".lp-work_popup-item" ).eq(2).css("transform", "translateY(-400%)");
+      //     $( ".lp-work_popup-item" ).eq(3).css("transform", "translateY(-300%)");
+      //     $( ".lp-work_popup-item" ).eq(4).css("transform", "translateY(-200%)");
+      //     $( ".lp-work_popup-item" ).eq(5).css("transform", "translateY(-100%)");
+      //     $( ".lp-work_popup-item" ).eq(6).css("transform", "translateY(0%)");
+      //   }
+      //
+      //
+      // });
+      //
+      // $('.lp-work_item').on('mouseleave', function() {
+      //   $(this).find('.lp-work_item-column').removeClass('active');
+      //   $(this).removeClass('active');
+      //   $(this).siblings('.lp-work_item').removeClass('active');
+      //   $(this).siblings('.lp-work_item').find('.lp-work_item-column').removeClass('active');
+      //   $('.lp-work_popup').removeClass('active');
+      // });
+      //
+      //
 
       var $popup = $(".lp-work_popup");
 
